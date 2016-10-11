@@ -10,8 +10,6 @@ namespace Sandbox
 
             MysticNumbers mysticnumber1 = new MysticNumbers();
 
-            //mysticnumber1.ThreeNumbers(4, 6, 9);
-
             Console.WriteLine($"resultatet er: {mysticnumber1.ThreeNumbers(4, 6, 2)}");
 
 
