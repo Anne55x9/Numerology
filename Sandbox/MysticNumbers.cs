@@ -56,20 +56,40 @@ namespace Sandbox
         {
             int result;
 
-
-            if (c > TwoNumbers(a, b))
+            if (c > d)
             {
                 result = c;
+                if (a > c || b > c)
+                {
+                    result = TwoNumbers(a, b);
+                }
             }
             else
             {
                 result = d;
-                if(d > TwoNumbers(a,b))
+                if (a > d || b > d)
                 {
-                    result = d;
-                }       
+                    result = TwoNumbers(a, b);
+                }
             }
-            return result;       
+
+            return result;   
         }
+
+        public int NewThreeNumbers(int a, int b, int c)
+        {
+            int result;
+
+            if(a > c || b > c)
+            {
+                result = TwoNumbers(a, b);
+            }
+            else
+            {
+                result = c;
+            }
+            return result;
+        }
+        
     }
 }
